@@ -14,17 +14,15 @@
 <body>
     <div class="contenedor">
         <h1>Login</h1>
-        <form id="forma" name="forma "action="Mi Servidor" method="post" onsubmit="datosEnviados()">
-            <div class="elemento"> 
-                <label for="usuario">Usuario</label><br>
+        <form class="square-form" id="forma" name="forma        "action="Mi Servidor" method="post" onsubmit="datosEnviados()">
+            <div class="elemento content-inputs"> 
                 <input type="text" id="usuario" name="usuario" required="true">
+                <label for="usuario">Usuario</label>
             </div>
-            <br>
-            <div class="elemento">
-                <label for="password">Password</label><br>
+            <div class="elemento content-inputs">
                 <input type="password" id="password" name="password" required="true">
+                <label for="password">Password</label>
             </div>
-            <br>
             <div class="elemento">
                 <input type="submit" name="enviar" value="ENVIAR">
             </div>

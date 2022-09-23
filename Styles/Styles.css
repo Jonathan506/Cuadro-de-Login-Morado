@@ -1,45 +1,83 @@
 html{
     height: 100%;
 }
+
 body{
-    margin: 0;
-    padding: 0;
     background: linear-gradient(#7209b7, #3f37c0);
+    margin: 0;
 }
+
 .contenedor{
-    margin: 50px auto;
-    width: 400px;
-    padding: 30px;
     background: rgba(0, 0, 0, .5);
     border-radius: 15px;
-    border: 1px solid #f72585;
+    border: 2px solid #f72585;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 30px;
+    width: 400px;
 }
+
 .contenedor h1{
-    margin: 0,0, 30px;
-    padding: 0;
-    font-size: 35px;
     color: #4cc9f0;
+    font-size: 35px;
+    margin: 0,0, 30px;
     text-align: center;
 }
-.contenedor .elemento label{
-    color: #fff;
+
+.content-inputs{
+    position: relative;
 }
-.contenedor .elemento input{
-    width: 100%;
-    padding: 10px 0;
+
+.elemento input{
     color: #fff;
     background: transparent;
     border: none;
-    border-bottom: 1px solid #fff; 
-    margin-bottom:  30px;   
+    border-bottom: 1px solid #fff;
+    margin-bottom:  30px;  
+    padding: 10px 0;
+    outline: none;  
+    width: 100%;
 }
-.contenedor .elemento input[type="submit"]{
+
+.content-inputs label{
+    color: #ffffff73;
+    padding: 10px 0;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: .5s;
+}
+
+.content-inputs input:focus ~ label,
+.content-inputs input:valid ~ label{
+    background: transparent;
+    color: #4cc9f0;
+    font-size: 12px;
+    top: -20px;
+    left: 0;
+}
+
+.elemento input[type="submit"]{
     background-color: #f72585;
     border: none;
-    border-radius: 15px;
+    border-radius: 1rem;
+    color: #4cc9f0;
+    cursor: pointer;
+    font-weight: bolder;
     letter-spacing: 5px;
     text-transform: uppercase;
-    cursor: pointer;
+    transition: all 0.5s;
     padding: 15px;
     margin-top: 30px;
+}
+
+.elemento input[type="submit"]:hover{
+    background-color: #f51177;
+}
+
+.elemento input[type="submit"]:active{
+    transform: scale(.9);
 }
