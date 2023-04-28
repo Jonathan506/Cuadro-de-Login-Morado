@@ -23,7 +23,7 @@ body{
     width: 400px;
 }
 
-.contenedor h1{
+.principal-title{
     color: #4cc9f0;
     font-size: 35px;
     margin: 0,0, 30px;
@@ -39,7 +39,7 @@ body{
     background: transparent;
     border: none;
     border-bottom: 1px solid #fff;
-    margin-bottom:  30px;  
+    margin-bottom: 30px;  
     padding: 10px 0;
     outline: none;  
     width: 100%;
